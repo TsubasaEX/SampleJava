@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
+public interface EmployTemp {
 
-public class EmployTemp {
+    double calcPay();
+
 }

@@ -1,4 +1,21 @@
-package PACKAGE_NAME;
+public class Man extends Employee{
 
-public class Man {
+    private double base;
+    public final String NAME="Man";
+
+    Man(double b,int yr,String dep){
+        super(yr,dep);
+        base = b;
+    }
+
+    @Override
+    public double calcPay() {
+        double pay=base*getYears();
+        return pay;
+    }
+
+    @Override
+    public String toString(){
+        return String.format("Man Pay: %f\n",calcPay());
+    }
 }
